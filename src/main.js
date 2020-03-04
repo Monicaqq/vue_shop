@@ -10,6 +10,12 @@ import '../src/assets/css/global.css'
 import axios from 'axios'
 // 配置请求的默认根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+axios.interceptors.request.use(function(config) {
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  // console.log(config)
+  // 在最后必须 return config
+  return config
+})
 // 挂载后可以直接通过this.$http 发送ajax请求
 Vue.prototype.$http = axios
 
