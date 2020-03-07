@@ -108,7 +108,7 @@
 export default {
   data() {
     return {
-      // 获取商品分类iebook的参数对象
+      // 获取商品分类的参数对象
       queryInfo: {
         type: '',
         pagenum: 1,
