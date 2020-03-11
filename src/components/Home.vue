@@ -87,10 +87,10 @@ export default {
     },
     // 菜单操作
     handleOpen(key, keyPath) {
-      console.log(key, keyPath)
+      // console.log(key, keyPath)
     },
     handleClose(key, keyPath) {
-      console.log(key, keyPath)
+      // console.log(key, keyPath)
     },
     // 获取菜单列表
     async getMenuList() {

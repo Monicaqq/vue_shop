@@ -109,7 +109,7 @@ export default {
       this.$message.success('获取商品列表成功')
       this.goodslist = res.data.goods
       this.total = res.data.total
-      console.log(this.goodslist)
+      // console.log(this.goodslist)
     },
     //  监听每页数
     handleSizeChange(newSize) {

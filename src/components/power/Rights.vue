@@ -48,7 +48,7 @@ export default {
         return this.$message.error('获取权限列表失败')
       }
       this.rightlist = res.data
-      console.log(res)
+      // console.log(res)
     }
   }
 }

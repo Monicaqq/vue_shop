@@ -173,7 +173,7 @@ export default {
       this.$message.success('获取订单列表成功')
       this.orderList = res.data.goods
       this.total = res.data.total
-      console.log(this.orderList)
+      // console.log(this.orderList)
     },
     // 监听每页显示数
     handleSizeChange(newSize) {
@@ -201,7 +201,7 @@ export default {
       }
       this.progressInfo = res.data
       this.progressDialogVisible = true
-      console.log(this.progressInfo)
+      // console.log(this.progressInfo)
     }
   }
 }
