@@ -32,7 +32,7 @@ Vue.config.productionTip = false
 Vue.component('tree-table', TreeTable)
 // 注册富文本编辑器为全局组件
 Vue.use(VueQuillEditor)
-Vue.filter('dataFormat', function(originVal) {
+Vue.filter('dateFormat', function(originVal) {
   const date = new Date(originVal)
   const y = date.getFullYear()
   const m = (date.getMonth() + 1 + '').padStart(2, '0')
